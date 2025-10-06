@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Sodhi Family - Pothi Mala</title>
+</head>
+<body class="bg-gradient-to-br from-indigo-100 via-white to-indigo-50 text-gray-800">
+
+  <!-- Navbar -->
+  <nav class="backdrop-blur-md bg-white/70 border-b border-indigo-200 sticky top-0 z-50 shadow-lg">
+    <div class="container mx-auto flex justify-between items-center px-6 py-3">
+      
+      <!-- Logo -->
+      <img src="logo family ..JPG" alt="Family Logo" class="h-12 rounded-lg shadow-md">
+
+      <!-- Hamburger Button (Mobile) -->
+      <button id="menu-btn" class="block lg:hidden text-indigo-800 focus:outline-none">
+        <svg class="w-8 h-8" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/>
+        </svg>
+      </button>
+
+      <!-- Nav Links -->
+      <div id="menu" class="hidden lg:flex flex-col lg:flex-row gap-6 absolute lg:static top-16 right-6 bg-white/90 lg:bg-transparent rounded-lg shadow-lg lg:shadow-none p-6 lg:p-0">
+        <a href="about.html" class="font-semibold text-indigo-800 hover:text-indigo-500 transition">ABOUT</a>
+        <a href="gallery.html" class="font-semibold text-indigo-800 hover:text-indigo-500 transition">GALLERY</a>
+        <a href="history.html" class="font-semibold text-indigo-800 hover:text-indigo-500 transition">HISTORY</a>
+        <a href="contact.html" class="font-semibold text-indigo-800 hover:text-indigo-500 transition">CONTACT</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Heading -->
+  <section class="text-gray-700 body-font">
+    <div class="container mx-auto px-5 py-20">
+      <div class="flex flex-col text-center w-full mb-16">
+        <h1 class="text-4xl md:text-5xl font-extrabold bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-600 bg-clip-text text-transparent drop-shadow-lg">
+          PHOTOS OF POTHI MALA
+        </h1>
+        <p class="mt-4 text-lg leading-relaxed max-w-3xl mx-auto text-gray-600">
+          Rare photos belonging to  <span class="font-semibold text-indigo-700">Pothi</span> (holy granth written by Guru Nanak Dev Ji) 
+          and the <span class="font-semibold text-indigo-700">Mala</span> (Rosary of Guru Nanak Dev Ji).
+        </p>
+      </div>
+
+      <!-- Gallery -->
+      <div class="flex flex-wrap -m-2">
+        <div class="flex flex-wrap w-full md:w-1/2">
+          <div class="p-2 w-1/2">
+            <img src="pothi2.jpeg" class="rounded-xl shadow-lg hover:scale-105 hover:shadow-2xl transition duration-500 ease-in-out object-cover w-full h-full" alt="gallery">
+          </div>
+          <div class="p-2 w-1/2">
+            <img src="pothi3.jpeg" class="rounded-xl shadow-lg hover:scale-105 hover:shadow-2xl transition duration-500 ease-in-out object-cover w-full h-full" alt="gallery">
+          </div>
+          <div class="p-2 w-full">
+            <img src="pothi4.jpeg" class="rounded-xl shadow-lg hover:scale-105 hover:shadow-2xl transition duration-500 ease-in-out object-cover w-full h-full" alt="gallery">
+          </div>
+        </div>
+        <div class="flex flex-wrap w-full md:w-1/2">
+          <div class="p-2 w-full">
+            <img src="pothi5.jpeg" class="rounded-xl shadow-lg hover:scale-105 hover:shadow-2xl transition duration-500 ease-in-out object-cover w-full h-full" alt="gallery">
+          </div>
+          <div class="p-2 w-1/2">
+            <img src="pothi - Copy.jpeg" class="rounded-xl shadow-lg hover:scale-105 hover:shadow-2xl transition duration-500 ease-in-out object-cover w-full h-full" alt="gallery">
+          </div>
+          <div class="p-2 w-1/2">
+            <img src="pothi6.jpeg" class="rounded-xl shadow-lg hover:scale-105 hover:shadow-2xl transition duration-500 ease-in-out object-cover w-full h-full" alt="gallery">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-indigo-900 text-white py-6 mt-12">
+    <div class="container mx-auto px-6 flex flex-col md:flex-row justify-between items-center">
+      <p class="text-sm">©  Sodhi Family of Guru Har Sahai | All Rights Reserved</p>
+      <div class="flex gap-6 mt-4 md:mt-0">
+        <a href="mailto:sodhifamilyofguruharsahai@gmail.com" class="hover:text-pink-400">📧 Email Us</a>
+        <a href="#" class="hover:text-pink-400">🌐 Facebook</a>
+        <a href="#" class="hover:text-pink-400">📷 Instagram</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Script for Mobile Menu -->
+  <script>
+    const menuBtn = document.getElementById("menu-btn");
+    const menu = document.getElementById("menu");
+
+    menuBtn.addEventListener("click", () => {
+      menu.classList.toggle("hidden");
+    });
+  </script>
+
+</body>
+</html>
+

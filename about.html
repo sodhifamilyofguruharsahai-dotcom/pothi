@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Pothimala Sahib</title>
+</head>
+<body class="bg-gray-50 text-gray-800 font-serif">
+
+  <!-- Navbar -->
+  <nav class="bg-gradient-to-r from-sky-500 to-indigo-600 shadow-lg sticky top-0 z-50">
+    <div class="container mx-auto flex justify-between items-center px-6 py-3">
+      
+      <!-- Logo -->
+      <div class="flex items-center gap-3">
+        <img class="h-12 w-12 rounded-full border-2 border-white shadow-md" src="logo family ..JPG" alt="Logo">
+        <span class="text-2xl font-bold text-white">Sodhi Family</span>
+      </div>
+
+      <!-- Hamburger Button (Mobile) -->
+      <button id="menu-btn" class="block lg:hidden text-white focus:outline-none">
+        <svg class="w-8 h-8" fill="none" stroke="currentColor" stroke-width="2" 
+             viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" 
+                d="M4 6h16M4 12h16M4 18h16"/>
+        </svg>
+      </button>
+
+      <!-- Nav Links -->
+      <div id="menu" class="hidden lg:flex space-x-6 flex-col lg:flex-row absolute lg:static top-16 right-6 lg:top-auto lg:right-auto bg-gradient-to-r lg:bg-transparent from-sky-500 to-indigo-600 lg:from-transparent lg:to-transparent rounded-lg shadow-lg lg:shadow-none p-6 lg:p-0">
+        <a href="about.html" class="text-white text-lg hover:text-yellow-300 transition">About</a>
+        <a href="gallery.html" class="text-white text-lg hover:text-yellow-300 transition">Gallery</a>
+        <a href="history.html" class="text-white text-lg hover:text-yellow-300 transition">History</a>
+        <a href="contact.html" class="text-white text-lg hover:text-yellow-300 transition">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="relative bg-gray-100">
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center container mx-auto px-6 py-16">
+      
+      <!-- Text Content -->
+      <div>
+        <h1 class="text-4xl md:text-5xl font-bold text-indigo-700 leading-snug">
+          Shri Pothimala Sahib <br>
+          <span class="text-sky-600">Originally belongs to Shri Guru Nanak Dev Ji</span>
+        </h1>
+        <p class="mt-6 text-lg text-gray-700 leading-relaxed">
+          The holy <b>Pothi Mala</b>,  POTHI Originally belongs to  Guru Nanak Dev Ji, MALA (Rosary of Guru Nanak Dev ji). 
+          Shri Gurudwara Pothimala Sahib, Faridabad, was built by <b>Baba Jaswant Singh Sodhi Ji</b>, 
+          the 14th direct descendant of Guru Ram Das Ji.
+        </p>
+        <a href="history.html" 
+           class="mt-6 inline-block px-6 py-3 bg-gradient-to-r from-indigo-600 to-sky-500 text-white rounded-lg shadow-lg hover:scale-105 transition">
+          Learn More →
+        </a>
+      </div>
+
+      <!-- Image -->
+      <div class="rounded-2xl overflow-hidden shadow-xl">
+        <img src="pothi.jpeg" alt="Pothi Mala" class="w-full h-96 object-cover transform hover:scale-105 transition">
+      </div>
+    </div>
+  </section>
+
+  <!-- Info Section -->
+  <section class="container mx-auto px-6 py-20">
+    <div class="grid md:grid-cols-3 gap-12 text-center">
+      
+      <!-- Card 1 -->
+      <div class="bg-white rounded-2xl shadow-lg p-8 hover:shadow-2xl transition">
+        <h3 class="text-xl font-semibold mt-6">Sacred Texts</h3>
+        <p class="mt-3 text-gray-600">The Pothi Mala Originally belongs to  Guru Nanak Dev Ji the 1st Sikh Guru .</p>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="bg-white rounded-2xl shadow-lg p-8 hover:shadow-2xl transition">
+        <h3 class="text-xl font-semibold mt-6">Historic Gurdwara</h3>
+        <p class="mt-3 text-gray-600">Built by Baba Jaswant Singh Sodhi Ji (14th direct descendant of 4th Sikh Guru ), it stands as a symbol of devotion and heritage.</p>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="bg-white rounded-2xl shadow-lg p-8 hover:shadow-2xl transition">
+        <h3 class="text-xl font-semibold mt-6">Living Legacy</h3>
+        <p class="mt-3 text-gray-600">The Sodhi family continues to preserve this divine heritage, Now this legacy is carried forward by  Guru Ansh Baba Rustam Sodhi (Present Gaddi Nashin)</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gradient-to-r from-sky-500 to-indigo-600 text-white py-6">
+    <div class="container mx-auto text-center">
+      <p class="text-lg">&copy;  Sodhi Family of Guru Har Sahai | All Rights Reserved</p>
+    </div>
+  </footer>
+
+  <!-- Toggle Script -->
+  <script>
+    const menuBtn = document.getElementById("menu-btn");
+    const menu = document.getElementById("menu");
+
+    menuBtn.addEventListener("click", () => {
+      menu.classList.toggle("hidden");
+    });
+  </script>
+
+</body>
+</html>

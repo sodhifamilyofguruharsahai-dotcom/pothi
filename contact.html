@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Review Us Form</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      background: #f5f5f5;
+    }
+
+    .container {
+      background-color: silver;
+      width: 60%;
+      height: 600px;
+      margin: 50px auto;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      padding: 12px;
+      border-radius: 30px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+    }
+
+    .container div {
+      border: 2px solid #f5deb3;
+      border-radius: 20px;
+      padding: 20px;
+      box-shadow: inset 0 2px 6px rgba(0,0,0,0.1);
+    }
+
+    .item1 {
+      background-image: url("gurudwara2.jfif");
+      background-size: cover;
+      background-position: center;
+      border: none;
+    }
+
+    .item2 {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .rr {
+      text-align: center;
+      font-size: 26px;
+      margin-bottom: 20px;
+      font-weight: bold;
+      color: #2c2c2c;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      position: relative;
+    }
+
+    .rr::after {
+      content: "";
+      display: block;
+      width: 50px;
+      height: 3px;
+      background: #8F2121;
+      margin: 8px auto 0;
+      border-radius: 2px;
+    }
+
+    .login-form {
+      width: 80%;
+    }
+
+    .login-form label {
+      font-weight: bold;
+      margin: 10px 0 5px;
+      display: block;
+      color: #333;
+    }
+
+    .login-form input {
+      width: 100%;
+      padding: 12px;
+      border-radius: 10px;
+      border: 1px solid #ccc;
+      margin-bottom: 15px;
+      font-size: 16px;
+      transition: 0.3s ease;
+    }
+
+    .login-form input:focus {
+      border-color: #8F2121;
+      box-shadow: 0 0 6px rgba(143,33,33,0.4);
+      outline: none;
+    }
+
+    .login-form button {
+      width: 100%;
+      padding: 12px;
+      background: linear-gradient(90deg, #8F2121, #b93d3d);
+      color: white;
+      font-size: 18px;
+      font-weight: bold;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+
+    .login-form button:hover {
+      background: linear-gradient(90deg, #5c1414, #8F2121);
+      transform: translateY(-2px);
+      box-shadow: 0 5px 12px rgba(0,0,0,0.25);
+    }
+    .go{
+      color: brown;
+      text-decoration: underline;
+    }
+    .MO{
+      color: brown;
+      text-decoration: underline;
+      text-align: center;
+    }
+    .AO{
+      color: brown;
+      text-decoration: underline;
+    }
+    .HO{
+      color: brown;
+      text-align: center;
+      ;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div class="item1"></div>
+    <div class="item2">
+      <h3 class="rr">REVIEW US</h3>
+      <form class="login-form">
+        <label for="username">Name</label>
+        <input type="text" id="username" placeholder="Enter your name" required>
+
+        <label for="contact">Contact No.</label>
+        <input type="tel" id="contact" placeholder="Enter your contact number" required>
+
+        <button type="submit">Submit</button>
+        <h4 class="go">sodhifamilyofguruharsahai@gmail.com</h4>
+        <h5 class="MO"> NIT 1 FARIDABAD (121001)</h5> 
+        <h5 class="AO">GURUDWARA SHRI POTHIMALA SAHIB JI  </h5>
+        <h5 class="HO"> FARIDABAD</h5>
+      </form>
+    </div>
+  </div>
+
+</body>
+</html>
